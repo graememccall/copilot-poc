@@ -1,0 +1,108 @@
+body {
+    background: #222;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace, 'Courier New', Courier;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', monospace, 'Courier New', Courier;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #0f0, 0 0 2px #fff;
+}
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #111;
+    box-shadow: 0 0 20px #0f0;
+}
+
+th, td {
+    border: 2px solid #0f0;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+th {
+    background: #222;
+    color: #0f0;
+    text-shadow: 0 0 4px #0f0;
+}
+
+tr:nth-child(even) {
+    background: #333;
+}
+
+a, button {
+    background: #0f0;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace, 'Courier New', Courier;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #0f0;
+    transition: background 0.2s, color 0.2s;
+}
+
+a:hover, button:hover {
+    background: #fff;
+    color: #0f0;
+}
+
+form {
+    width: 320px;
+    margin: 40px auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #0f0;
+    border: 2px solid #0f0;
+}
+
+label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 0.9em;
+}
+
+input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    margin-top: 6px;
+    background: #222;
+    color: #0f0;
+    border: 1px solid #0f0;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace, 'Courier New', Courier;
+    font-size: 1em;
+}
+
+.file-btn {
+    display: inline-block;
+    background: #0f0;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace, 'Courier New', Courier;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #0f0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.file-btn:hover {
+    background: #fff;
+    color: #0f0;
+}

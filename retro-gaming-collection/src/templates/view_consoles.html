@@ -2,23 +2,35 @@
 <html>
 <head>
     <title>Retro Consoles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pong.css') }}">
 </head>
 <body>
     <h1>Retro Video Game Consoles</h1>
-    <table border="1">
+    <table>
         <tr>
             <th>Name</th>
             <th>Manufacturer</th>
             <th>Release Year</th>
+            <th>Image</th>
         </tr>
         {% for console in consoles %}
         <tr>
             <td>{{ console.name }}</td>
             <td>{{ console.manufacturer }}</td>
             <td>{{ console.release_year }}</td>
+            <td>
+                {% if console.image_filename %}
+                    <img src="{{ url_for('static', filename='uploads/' ~ console.image_filename) }}" alt="Console Image" style="max-width:100px;max-height:100px;">
+                {% else %}
+                    No image
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
     </table>
-    <p><a href="{{ url_for('add_console') }}">Add Console</a></p>
+    <p style="text-align:center;">
+        <a href="{{ url_for('add_console') }}">Add Console</a>
+    </p>
 </body>
 </html>
